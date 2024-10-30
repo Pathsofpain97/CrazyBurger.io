@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 import { ItemCounter } from "../components/ItemCounter";
 import { CartContext } from "../context/CartContext";
-import Header from "../components/Navbar"; // Asegúrate de que esta ruta sea correcta
+import Header from "../components/Navbar";
 import '../styles/Details.css'; 
 
 const DetailsProduct = () => {

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ricknmorty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ricknmorty .ct{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.ricknmorty .card{
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 10px rgba(255, 122, 0, 0.8));
+    margin: 5px;
+}
+
+.ricknmorty .card:hover{
+    scale: 1.05;
+}
+
+.textrick{
+    color: #ffffff;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.copyrigth{
+    color: #ffffff;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.textsociales{
+    color: #ffffff;
+	text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.textsociales a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.textsociales:hover{
+    scale: 1.1;
+}

@@ -16,7 +16,7 @@ export const Item = ({ item }) => {
             Nos quedan {item.stock}
           </Card.Text>
           <Card.Text className="ctx2">${item.price}</Card.Text>
-          <Link to={`/items/${item.id}`} className="btn btn-dark">Ver más</Link>
+          <Link to={`/items/${item.id}`} className="btn btn-dark">Comprar</Link>
         </Card.Body>
       </Card>
     </div>

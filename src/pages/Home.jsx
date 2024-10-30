@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 
 import '../styles/Home.css'; 
 import  Header  from "../components/Navbar";
+import  Footer  from "../components/Footer";
 import  Reloj  from "../components/Clock";
 import { ItemListContainer } from "../components/ItemListContainer";
 
@@ -33,6 +34,10 @@ const Home = () => {
       </div>
       </Container>
     </div>
+
+      <Container>
+        <Footer></Footer>
+      </Container>
   </div>
   );
 };

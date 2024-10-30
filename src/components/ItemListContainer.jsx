@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import { useEffect, useState } from 'react';
 import { Item } from "./Item";
 import { getFirestore, getDocs, collection } from 'firebase/firestore';
-
 import '../styles/items.css';
 
 export const ItemListContainer = () => {
@@ -24,9 +23,24 @@ export const ItemListContainer = () => {
                     price: Number(data.price)   // Convertir price a número
                 };
             });
+
+            // Filtrar por categoría si existe
             if (id) {
                 products = products.filter(item => item.category && item.category.toLowerCase() === id.toLowerCase());
             }
+
+            // Definir el orden de las categorías
+            const categoryOrder = ['hamburguesa', 'guarnicion', 'bebida', 'postre'];
+
+            // Ordenar productos primero por categoría y luego por precio
+            products.sort((a, b) => {
+                const categoryComparison = categoryOrder.indexOf(a.category.toLowerCase()) - categoryOrder.indexOf(b.category.toLowerCase());
+                if (categoryComparison !== 0) {
+                    return categoryComparison; // Ordenar por categoría
+                }
+                return a.price - b.price; // Ordenar por precio
+            });
+
             setProducts(products);
         });
     }, [id]);
