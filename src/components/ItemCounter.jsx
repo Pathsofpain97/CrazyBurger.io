@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import PropTypes from 'prop-types';
 
 export const ItemCounter = ({ onAdd, stock, initial }) => {
   const [count, setCount] = useState(initial);
@@ -21,21 +22,30 @@ export const ItemCounter = ({ onAdd, stock, initial }) => {
   return (
     <>
       <Container>
-      <div className="containerc mb-4">
-        <div className="resta me-1" onClick={handleDecreaseCount}>
-          ➖
+        <div className="containerc mb-4">
+          <div className="resta me-1" onClick={handleDecreaseCount}>
+            ➖
+          </div>
+          <input type="number" value={count} readOnly className="input-no-spinner"/>
+          <div className="suma ms-1" onClick={handleIncreaseCount}>
+            ➕
+          </div>
         </div>
-        <input type="number" value={count} readOnly className="input-no-spinner"/>
-        <div className="suma ms-1" onClick={handleIncreaseCount}>
-          ➕
-        </div>
-      </div>
       </Container>
       <Container>
-      <div className="containerc mb-4">
-      <Button variant="warning" size="lg" onClick={handleAdd} className="me-4">Agregar al carrito</Button>{' '}
-      </div>
+        <div className="containerc mb-4">
+          <Button variant="warning" size="lg" onClick={handleAdd} className="me-4">Agregar al carrito</Button>{' '}
+        </div>
       </Container>
     </>
   );
 };
+
+// Validación de props
+ItemCounter.propTypes = {
+  onAdd: PropTypes.func.isRequired, // `onAdd` debe ser una función y es requerida
+  stock: PropTypes.number.isRequired, // `stock` debe ser un número y es requerido
+  initial: PropTypes.number.isRequired, // `initial` debe ser un número y es requerido
+};
+
+export default ItemCounter;

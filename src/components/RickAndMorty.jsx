@@ -1,6 +1,6 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Card, Container } from 'react-bootstrap';
-import '../styles/items.css';
+import '../styles/Items.css';
 
 const Personajes = () => {
     const [personajes, setPersonajes] = useState([]);
@@ -13,18 +13,18 @@ const Personajes = () => {
 
     return (
         <Container className="ricknmorty mb-3 mr-2">
-                {personajes.map(personaje => {
-                    if (personaje.id > 2) return null; // Filtrar personajes con id > 2
+            {personajes.map(personaje => {
+                if (personaje.id > 2) return null; // Filtrar personajes con id > 2
 
-                    return (
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={personaje.image} />
-                            <Card.Body>
+                return (
+                    <Card key={personaje.id} style={{ width: '18rem' }}> {/* Agregar key aquí */}
+                        <Card.Img variant="top" src={personaje.image} />
+                        <Card.Body>
                             <Card.Title className="ct">{personaje.name}</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    );
-                })}
+                        </Card.Body>
+                    </Card>
+                );
+            })}
         </Container>
     );
 };

@@ -17,7 +17,7 @@ const initialValues = {
 };
 
 export const Cart = () => {
-    const { clear, items, onRemove } = useContext(CartContext);
+    const { clear, items } = useContext(CartContext);
     const [buyer, setBuyer] = useState(initialValues);
     const navigate = useNavigate();
 
