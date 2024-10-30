@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <>
-      <Navbar expand="lg" className="container-fluid NvBar">
+      <Navbar expand="lg" className="container-fluid mb-4 NvBar">
         <Container className="container d-flex align-items-center justify-content-between">
           <Navbar.Brand>
             <NavLink to="/Home" className="position-absolute top-0 start-0 logo">

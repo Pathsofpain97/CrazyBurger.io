@@ -49,7 +49,7 @@ const DetailsProduct = () => {
     return (
         <>
             <Header /> {/* Renderiza el Navbar aquí */}
-            <Container className='pc mt-2'>
+            <Container className='pc mt-5'>
                 {products && (
                     <Fragment>
                         <div className="dimg text-center">

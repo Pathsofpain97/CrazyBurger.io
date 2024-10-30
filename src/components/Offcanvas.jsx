@@ -5,6 +5,7 @@ import '../styles/Home.css';
 
 import { Button, Offcanvas, Container } from "react-bootstrap";
 import { CartWidget } from "../components/CartWidget";
+import { Cart } from "./Cart";
 
 function OffCanvasExample({ name, ...props }) {
   const [show, setShow] = useState(false);
@@ -16,19 +17,17 @@ function OffCanvasExample({ name, ...props }) {
     <>
       {name === 'end' && (
         <Button className="position-absolute top-0 end-0 btn-warning btn-lg Carrito" onClick={handleShow}>
-            <CartWidget></CartWidget>
+            <CartWidget />
         </Button>
       )}
-      <Container className="container-fluid d-flex flex-row-reverse">
-      <Offcanvas show={show} onHide={handleClose} {...props}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </Offcanvas.Body>
-      </Offcanvas>
+      <Container>
+        <Offcanvas show={show} onHide={handleClose} {...props}>
+          <Offcanvas.Header className='offcanvas-header' closeButton>
+          </Offcanvas.Header>
+          <Offcanvas.Body className='offcanvas-body'>
+            <Cart /> 
+          </Offcanvas.Body>
+        </Offcanvas>
       </Container>
     </>
   );

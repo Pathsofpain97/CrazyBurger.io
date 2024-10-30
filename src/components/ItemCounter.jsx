@@ -33,7 +33,7 @@ export const ItemCounter = ({ onAdd, stock, initial }) => {
       </Container>
       <Container>
       <div className="containerc mb-4">
-      <Button variant="light" size="sm" onClick={handleAdd} className="me-4">Agregar al carrito</Button>{' '}
+      <Button variant="warning" size="sm" onClick={handleAdd} className="me-4">Agregar al carrito</Button>{' '}
       </div>
       </Container>
     </>

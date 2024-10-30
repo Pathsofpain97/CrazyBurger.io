@@ -8,21 +8,56 @@
 
 .pc .pct{
     text-align: center;
+    color: #fcfcfcf4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .dimg .img{
     margin-bottom: 2rem;
     margin-top: 1rem;
-    max-width: 90%;
+    max-width: 50%;
 }
 
 
 .pc .pctx1{
     padding-top: 40px;
-    color: #ffffff;
+    color: #fcfcfcf4;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
 
+.containerc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerc .btn{
+    margin-left: 20px;
+}
+
+.resta{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.suma{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.input-no-spinner::-webkit-inner-spin-button,
+.input-no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Asegúrate de que no haya margen residual */
+}
+
+/* Oculta los botones de incremento/decremento en Firefox */
+.input-no-spinner {
+  -moz-appearance: textfield;
+  appearance: textfield; /* Propiedad estándar para otros navegadores */
+}

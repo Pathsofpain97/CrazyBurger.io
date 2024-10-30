@@ -17,7 +17,7 @@ function App() {
         <BrowserRouter>
           <Routes>
           <Route path="/" element={<Landing/>}></Route>
-          <Route path="/home" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/items/:id" element={<DetailsProduct />} />
           <Route path="*" element={<Error404 />} />
           </Routes>
