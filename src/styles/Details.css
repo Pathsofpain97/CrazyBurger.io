@@ -96,6 +96,18 @@
         text-align: center;
     }
 
+    .suma{
+        font-size: 1.3rem;
+    }
+
+    .resta{
+        font-size: 1.3rem;
+    }
+
+    .input-no-spinner{
+        font-size: 1rem;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -115,5 +127,17 @@
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
+    }
+
+    .suma{
+        font-size: 1.3rem;
+    }
+
+    .resta{
+        font-size: 1.3rem;
+    }
+
+    .input-no-spinner{
+        font-size: 1rem;
     }
 }

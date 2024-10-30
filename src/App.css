@@ -19,9 +19,9 @@
 
 .card1{
     width: 24rem;
-    border-radius: 16px;
+    border-radius: 4rem;
     padding: 2rem 3rem;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.103), 0 0 50px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.103), 0 0 50px rgba(0, 0, 0, 0.23);
 }
 
 .burger{
@@ -81,4 +81,37 @@
   cursor: pointer;
   background-color: #fd4120;
   transition: 2;
+}
+
+
+@media (max-width: 600px) {
+
+  .info h1{
+      font-size: 1.3rem;
+  }
+
+  .info p{
+    font-size: 1.1rem;
+}
+
+.bienvenido button{
+  font-size: 1.1rem;
+}
+
+}
+
+@media (max-width: 400px) {
+
+  .info h1{
+    font-size: 1.3rem;
+}
+
+.info p{
+  font-size: 1.1rem;
+}
+
+.bienvenido button{
+  font-size: 1.1rem;
+}
+
 }
