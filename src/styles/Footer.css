@@ -59,3 +59,35 @@
 .textsociales:hover{
     scale: 1.1;
 }
+
+
+@media (max-width: 600px) {
+
+    .textrick {
+        font-size: 1.4rem;
+    }
+
+    .copyrigth {
+        font-size: 1.3rem;
+    }
+
+    .textsociales {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .textrick {
+        font-size: 1.4rem;
+    }
+
+    .copyrigth {
+        font-size: 1.3rem;
+    }
+
+    .textsociales {
+        font-size: 1.3rem;
+    }
+}

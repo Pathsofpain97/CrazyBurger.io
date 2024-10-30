@@ -44,7 +44,7 @@
 
 .resta{
     cursor: pointer;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .resta:hover{
@@ -53,7 +53,7 @@
 
 .suma{
     cursor: pointer;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .suma:hover{
@@ -61,7 +61,7 @@
 }
 
 .input-no-spinner{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -75,4 +75,45 @@
 .input-no-spinner {
   -moz-appearance: textfield;
   appearance: textfield; /* Propiedad estándar para otros navegadores */
+}
+
+@media (max-width: 600px) {
+
+    .pc .pct{
+        text-align: center;
+        color: #fcfcfcf4;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .pc .pctx1{
+        padding-top: 40px;
+        color: #fcfcfcf4;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .pc .pct{
+        text-align: center;
+        color: #fcfcfcf4;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .pc .pctx1{
+        padding-top: 40px;
+        color: #fcfcfcf4;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
 }
