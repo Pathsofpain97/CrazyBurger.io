@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import '../styles/Home.css'; 
 
 import { Button, Offcanvas, Container } from "react-bootstrap";
-import { CartWidget } from "../components/CartWidget";
+import { CartWidget } from "./Cartwidget";
 import { Cart } from "./Cart";
 
 function OffCanvasExample({ name, ...props }) {
