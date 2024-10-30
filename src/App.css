@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.card1{
+    width: 24rem;
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.103), 0 0 50px rgba(0, 0, 0, 0.12);
+}
+
+.burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger .circle{
+  position: absolute;
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(250, 165, 18), rgb(242, 209, 22));
+}
+
+.burger img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(9px 16px 3px #000A);
+}
+
+.info h1{
+  font-size: 1.7rem;
+  padding: 1rem 0 0;
+  text-align: center;
+  padding-top: 1.5rem;
+  color: #0a0a0a;
+  text-decoration: solid;
+}
+
+.info p{
+  font-size: 1.3rem;
+  padding: 1rem 0 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #171717;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.bienvenido{
+  padding-bottom: 2rem;
+}
+
+.bienvenido button{
+  width: 100%;
+  color: #ffffff;
+  background-color: #ff5739;
+  border-radius: 30px;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.bienvenido button:hover{
+  cursor: pointer;
+  background-color: #fd4120;
+  transition: 2;
+}
