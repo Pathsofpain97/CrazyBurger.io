@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { useEffect, useState } from 'react';
 import { Item } from "./Item";
 import { getFirestore, getDocs, collection } from 'firebase/firestore';
-import '../styles/items.css';
+import '../styles/Items.css';
 
 export const ItemListContainer = () => {
     const { id } = useParams();

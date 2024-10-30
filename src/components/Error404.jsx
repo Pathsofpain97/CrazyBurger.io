@@ -23,7 +23,7 @@ export const Error404 = () => {
         <Container className="mt-5 text-center">
             <h1 className="etx">¿Nos quedamos sin 🍔? o ¿estás perdido? 👻😨</h1>
             <p className="ep">¿Te ayudamos?</p>
-            <p className="ep">Presiona este ⬇️​ botón mágico</p>
+            <p className="ep">Presiona este ⬇️​ ​botón mágico</p>
             <Button variant="warning" size="lg" onClick={() => navigate("/Home")} className="mt-4">
                 Volver a la Home
             </Button>
