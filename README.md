@@ -1,6 +1,6 @@
 Aca esta la page de mi APP https://crazy-burger-io.vercel.app/  espero que les guste! :D 
 
-Los links a Redes Sociales son de Smash Carne Aplastada, lugar de donde salio la inspiracion para crear la app aclaro que (no busco usar su imagen ni tampoco facturar con ella, solo vincularlos artisticamente por la inspiracion que me dieron y por ende es todo sin fines comerciales ni de lucro)
+Los links a Redes Sociales son de Smash Carne Aplastada, lugar de donde salio la inspiracion para crear la app aclaro que (no busco usar su imagen ni tampoco facturar con ella, solo vincularlos artisticamente por la inspiracion que me dieron y por ende es todo sin fines comerciales ni de lucro) Aclaro tambien que las imagenes utilizadas son con fines artisticos y de estudio, no hay fines de lucro con ellas ni la propia pagina. 
 Gracias. 
 
 # React + Vite
