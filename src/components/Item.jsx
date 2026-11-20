@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import PropTypes from 'prop-types';
+import { getProductImage } from './getProductImg';
 
 export const Item = ({ item }) => {
   if (!item) return null; // Manejo de errores
 
+    // Buscamos la imagen correspondiente al producto de Firebase
+  const imageSrc = getProductImage(item.imgURL);
+  
   return (
     <div className="hamburger mb-3 mr-2">
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={item.imgURL} alt={item.title} />
+        <Card.Img variant="top" src={imageSrc} alt={item.title} />
         <Card.Body>
           <Card.Title className="ct">{item.title}</Card.Title>
           <Card.Text className="ctx1">{item.description}</Card.Text>
